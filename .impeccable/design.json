@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T12:00:00.000Z",
+  "title": "Design System: L1A1 Parts Handbook",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#121614",
+        "tonalRamp": ["#121614", "#2A302C", "#454C46", "#5E665E", "#79817A", "#969D96", "#B9BEB6", "#D5D9D1"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Bench Paper",
+        "canonical": "#EDEFEA",
+        "tonalRamp": ["#2E312D", "#4A4E49", "#676C66", "#858B84", "#A3A9A2", "#C1C6BF", "#D7DBD4", "#EDEFEA"]
+      },
+      "paper-raised": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "canonical": "#F6F7F3",
+        "tonalRamp": ["#3B3E39", "#585C56", "#757A73", "#93988F", "#B0B5AC", "#C9CDC5", "#E0E3DC", "#F6F7F3"]
+      },
+      "paper-note": {
+        "role": "neutral",
+        "displayName": "Note Paper",
+        "canonical": "#E6E9E1",
+        "tonalRamp": ["#3A3D38", "#565A53", "#72776E", "#8E9389", "#AAB0A5", "#C4C9BF", "#D5D9CF", "#E6E9E1"]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#454C46",
+        "tonalRamp": ["#141715", "#272C28", "#3A403B", "#454C46", "#5E665E", "#79817A", "#969D96", "#B9BEB6"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#5E665E",
+        "tonalRamp": ["#1B1F1C", "#2E332F", "#414842", "#5E665E", "#757D75", "#8F978F", "#ABB2AA", "#C9CEC7"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule",
+        "canonical": "#B9BEB6",
+        "tonalRamp": ["#2F332F", "#444A44", "#595F59", "#6F756E", "#878D85", "#9FA59D", "#B9BEB6", "#D5D9D1"]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Oxide Red",
+        "canonical": "#C03214",
+        "tonalRamp": ["#3A0F06", "#5E180A", "#821F0D", "#A62811", "#C03214", "#D45A41", "#E48B76", "#F3C4B8"]
+      },
+      "plate-ground": {
+        "role": "neutral",
+        "displayName": "Plate Ground",
+        "canonical": "#E6E9E2",
+        "tonalRamp": ["#3B3F3A", "#555A53", "#6F746C", "#898E86", "#A3A8A0", "#BCC1B8", "#D1D5CC", "#E6E9E2"]
+      },
+      "plate-metal": {
+        "role": "neutral",
+        "displayName": "Plate Metal",
+        "canonical": "#D6DBD3",
+        "tonalRamp": ["#343833", "#4C514A", "#656A63", "#7E837C", "#979C94", "#B0B5AD", "#C3C8C0", "#D6DBD3"]
+      },
+      "plate-furniture": {
+        "role": "neutral",
+        "displayName": "Dark Maranyl",
+        "canonical": "#6A7268",
+        "tonalRamp": ["#252A25", "#333933", "#414741", "#4F554F", "#5D645D", "#6A7268", "#7E857B", "#949B90"]
+      },
+      "plate-dark": {
+        "role": "neutral",
+        "displayName": "Magazine Steel",
+        "canonical": "#6F776D",
+        "tonalRamp": ["#242824", "#313631", "#3F443F", "#4D534D", "#5D635D", "#6F776D", "#828A80", "#969E93"]
+      },
+      "plate-side-metal": {
+        "role": "neutral",
+        "displayName": "Side Metal",
+        "canonical": "#B1B8AE",
+        "tonalRamp": ["#2E322E", "#464B46", "#5E635E", "#777C77", "#90958F", "#A4ABA1", "#B1B8AE", "#C5CBC2"]
+      },
+      "plate-side-furniture": {
+        "role": "neutral",
+        "displayName": "Side Maranyl",
+        "canonical": "#4F574D",
+        "tonalRamp": ["#1E221E", "#2A2F2A", "#373C37", "#444944", "#4F574D", "#61695F", "#747C71", "#899186"]
+      },
+      "plate-side-dark": {
+        "role": "neutral",
+        "displayName": "Side Magazine",
+        "canonical": "#5F675D",
+        "tonalRamp": ["#232723", "#2F342F", "#3C413C", "#4A504A", "#5F675D", "#737B70", "#879084", "#9BA497"]
+      },
+      "plate-side-paper": {
+        "role": "neutral",
+        "displayName": "Side Paper",
+        "canonical": "#C0C6BC",
+        "tonalRamp": ["#353935", "#4D524D", "#666B66", "#7F847F", "#989D97", "#ADB3A9", "#C0C6BC", "#D3D8CF"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Title Block Display",
+        "purpose": "The L1A1 wordmark only; expanded Archivo at 96–276px."
+      },
+      "headline": {
+        "displayName": "Section Opener",
+        "purpose": "The five manual chapters and the safety statement."
+      },
+      "title": {
+        "displayName": "Part Name",
+        "purpose": "Parts-card names and major subheads."
+      },
+      "body": {
+        "displayName": "Reading Text",
+        "purpose": "English reading copy at 54–68ch; Chinese falls back to the CJK stack."
+      },
+      "label": {
+        "displayName": "Instrument Label",
+        "purpose": "Nav, controls, table keys, slot tags, callouts."
+      },
+      "data": {
+        "displayName": "Tabular Data",
+        "purpose": "Specification values and part numbers; tabular numerals."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "plate-separation",
+        "value": "900ms cubic-bezier(0.22, 0.8, 0.2, 1)",
+        "purpose": "The one opening gesture: the 18 plate parts move from assembled to exploded once on load."
+      },
+      {
+        "name": "state-fade",
+        "value": "180ms ease",
+        "purpose": "Background and colour changes on buttons, chips, cards and links."
+      },
+      {
+        "name": "cycle-step",
+        "value": "550ms cubic-bezier(0.22, 0.8, 0.2, 1)",
+        "purpose": "Carrier, spring and hammer movement between cycle steps."
+      },
+      {
+        "name": "intro-delay",
+        "value": "420ms",
+        "purpose": "Pause before the plate separates, so the assembled drawing is read first."
+      }
+    ],
+    "breakpoints": [
+      { "name": "desktop-nav-end", "value": "1000px" },
+      { "name": "plate-pan", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The ink-filled action used for Open the plate and Play the cycle.",
+      "html": "<button class=\"ds-btn ds-btn--primary\" type=\"button\">OPEN THE PLATE <span aria-hidden=\"true\">↓</span></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:0 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--font);font-size:11px;font-weight:600;letter-spacing:.13em;line-height:1;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .18s var(--ease),color .18s var(--ease),border-color .18s var(--ease)}.ds-btn--primary{background:var(--ink);color:var(--paper)}.ds-btn--primary:hover{background:var(--accent);border-color:var(--accent);color:var(--paper)}.ds-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The outlined action used for The cycle.",
+      "html": "<button class=\"ds-btn\" type=\"button\">THE CYCLE <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:0 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--font);font-size:11px;font-weight:600;letter-spacing:.13em;line-height:1;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .18s var(--ease),color .18s var(--ease),border-color .18s var(--ease)}.ds-btn:hover{background:var(--ink);color:var(--paper)}.ds-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Square 34px control with a hairline border; the active filter takes the oxide-red border and text.",
+      "html": "<button class=\"ds-chip\" type=\"button\" aria-pressed=\"true\">GAS</button>",
+      "css": ".ds-chip{min-height:34px;padding:0 11px;border:1px solid var(--rule);background:transparent;color:var(--ink-muted);font-family:var(--font);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}.ds-chip:hover{border-color:var(--ink);color:var(--ink)}.ds-chip[aria-pressed=\"true\"]{border-color:var(--accent);color:var(--accent)}.ds-chip:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Parts Card",
+      "kind": "card",
+      "refersTo": "parts-card",
+      "description": "Square hairline card with a large part number, a group tag, the name, a role note, a boxed note and related links.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card__top\"><span class=\"ds-card__num\">04</span><span class=\"ds-card__group\">GAS</span></div><h3 class=\"ds-card__name\">Gas block</h3><p class=\"ds-card__role\">A steel collar around the barrel, just ahead of the handguard.</p><p class=\"ds-card__note\"><b>NOTE</b> The gas block is the front anchor of the upper assembly.</p></article>",
+      "css": ".ds-card{display:flex;flex-direction:column;gap:12px;padding:28px;background:var(--paper);color:var(--ink);font-family:var(--font);border:1px solid var(--rule)}.ds-card:hover{background:var(--paper-raised);box-shadow:inset 0 0 0 1px var(--accent)}.ds-card__top{display:flex;align-items:center;justify-content:space-between}.ds-card__num{font-size:30px;font-weight:300;font-stretch:125%;line-height:.8;color:var(--accent)}.ds-card__group{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);border:1px solid var(--rule);padding:3px 6px}.ds-card__name{margin:0;font-size:26px;font-weight:700;font-stretch:112%;line-height:1}.ds-card__role{margin:0;font-size:15px;line-height:1.5;color:var(--ink-muted)}.ds-card__note{margin:0;padding:10px 12px;background:var(--paper-note);border:1px solid var(--rule);font-size:13px;line-height:1.5;color:var(--ink-muted)}.ds-card__note b{font-size:10px;letter-spacing:.14em;color:var(--accent)}"
+    },
+    {
+      "name": "Plate Tab",
+      "kind": "custom",
+      "refersTo": "plate-tab",
+      "description": "The numbered square that moves with its SVG part; live state fills oxide red.",
+      "html": "<button class=\"ds-tab\" type=\"button\" aria-pressed=\"true\">04</button>",
+      "css": ".ds-tab{width:40px;height:30px;border:1px solid var(--ink);background:var(--paper-raised);color:var(--ink);font-family:var(--font);font-size:13.5px;font-weight:700;line-height:1;cursor:pointer}.ds-tab:hover{border-color:var(--accent);color:var(--accent)}.ds-tab[aria-pressed=\"true\"]{background:var(--accent);border-color:var(--accent);color:var(--paper)}.ds-tab:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Extruded Figure",
+      "kind": "custom",
+      "description": "The signature figure technique: a true front elevation plus a solid oblique side face, stepped darker by material and closed by a 1.4px ink back edge.",
+      "html": "<svg class=\"ds-extrude\" viewBox=\"0 0 120 80\" width=\"120\" height=\"80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"32\" y=\"28\" width=\"70\" height=\"28\" fill=\"#B1B8AE\"/><rect x=\"38\" y=\"34\" width=\"70\" height=\"28\" fill=\"#B1B8AE\"/><rect x=\"44\" y=\"40\" width=\"70\" height=\"28\" fill=\"#B1B8AE\" stroke=\"#121614\" stroke-width=\"1.4\"/><rect x=\"20\" y=\"16\" width=\"70\" height=\"28\" fill=\"#D6DBD3\" stroke=\"#121614\" stroke-width=\"1.4\"/><rect x=\"56\" y=\"24\" width=\"22\" height=\"12\" fill=\"#F6F7F3\"/></svg>",
+      "css": ".ds-extrude{display:block;max-width:100%;height:auto}"
+    },
+    {
+      "name": "Sticky Readout",
+      "kind": "custom",
+      "description": "The plate's always-visible legend strip: part number, name, and a link to the note.",
+      "html": "<div class=\"ds-readout\"><span class=\"ds-readout__num\">04</span><span class=\"ds-readout__name\">Gas block</span><a class=\"ds-readout__link\" href=\"#\">READ THE NOTE ↓</a></div>",
+      "css": ".ds-readout{display:flex;align-items:baseline;gap:14px;padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper);color:var(--ink);font-family:var(--font)}.ds-readout__num{font-size:24px;font-weight:700;font-stretch:125%;line-height:.9;color:var(--accent)}.ds-readout__name{font-size:15px;font-weight:600}.ds-readout__link{margin-left:auto;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);text-decoration:none;border-bottom:1px solid var(--rule)}.ds-readout__link:hover{color:var(--accent);border-color:var(--accent)}"
+    },
+    {
+      "name": "Manual Navigation",
+      "kind": "nav",
+      "description": "The 11px tracked uppercase jump row; a compact index row replaces it below 1000px.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#plate\">PLATE</a><a href=\"#parts\">PARTS</a><a href=\"#cycle\">CYCLE</a><a href=\"#record\">RECORD</a><a href=\"#safety\">SAFETY</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px;font-family:var(--font)}.ds-nav a{position:relative;padding:12px 0;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);text-decoration:none}.ds-nav a::after{content:\"\";position:absolute;left:0;right:0;bottom:6px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease)}.ds-nav a:hover{color:var(--ink)}.ds-nav a:hover::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Safety Field",
+      "kind": "custom",
+      "description": "The single full oxide-red region: five instructor-first rules, a paper-coloured rule list, and a boxed close.",
+      "html": "<section class=\"ds-safety\"><span class=\"ds-safety__num\">05</span><h2>A rifle is not a prop.</h2><ol><li><b>01</b>Treat every rifle as loaded.</li><li><b>02</b>Handle it only when an instructor is present.</li></ol><p class=\"ds-safety__close\">If you are unsure, stop. Ask.</p></section>",
+      "css": ".ds-safety{padding:64px;background:var(--accent);color:var(--paper);font-family:var(--font)}.ds-safety__num{font-size:11px;font-weight:600;letter-spacing:.14em}.ds-safety h2{margin:20px 0 28px;max-width:12ch;font-size:64px;font-weight:700;font-stretch:118%;line-height:.9;text-transform:uppercase}.ds-safety ol{list-style:none;margin:0;padding:0;border-top:1px solid rgba(237,239,234,.45)}.ds-safety li{display:grid;grid-template-columns:32px 1fr;gap:10px;padding:16px 0;border-bottom:1px solid rgba(237,239,234,.45);font-size:18px;line-height:1.4}.ds-safety li b{font-size:10px;font-weight:600;letter-spacing:.1em}.ds-safety__close{display:inline-block;margin-top:24px;padding:14px 18px;border:1px solid var(--paper);font-size:12px;font-weight:700}.ds-safety h2,.ds-safety p,.ds-safety li{color:var(--paper)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Manual, Revised for Screen",
+    "overview": "This is a document that happens to be a website, made for the Hong Kong Adventure Corps. It borrows the authority of a 1950s infantry pamphlet — numbered sections, a margin rail, a plate with callout keys, tabular data — and rebuilds it with the precision of a modern screen: a variable grotesque, live vector linework, and one red field that does real work. The object is treated with technical respect, never militarist theatre. There is no camouflage, no neon, no faux paper, no tactical dark mode. The frame owns the world; the reading column stays calm. The masthead, the numbered rail, the section openers, the plate controls and the single safety field carry the oxide red and the expanded Archivo voice. The body text sits at a real measure in a workhorse sans, on a cool paper ground, with hairline rules doing the structural work. The exploded plate is a 3D technical plate: a true side elevation with a solid oblique side face, lit from the top-left. It is not a rotatable model, shaded render, or drop-shadowed card. The cycle is a flat two-dimensional schematic with a moving cartridge. The rifle is drawn in its real material split: dark Maranyl furniture against light parkerised steel, with the black magazine as the third tone.",
+    "keyCharacteristics": [
+      "Cool paper, near-black ink, one oxide-red accent.",
+      "One self-hosted variable family, Archivo, used across three width settings.",
+      "Square corners, 1px hairlines, no shadows.",
+      "A 3D extruded exploded plate and a flat two-dimensional six-step cycle.",
+      "Dark Maranyl furniture against light parkerised steel.",
+      "A bilingual reading layer: English default, Traditional Chinese on demand.",
+      "The Hong Kong Adventure Corps identity: crest, unit name, oxide accent and copyright line; no motto."
+    ],
+    "rules": [
+      {
+        "name": "The One Red Field Rule",
+        "body": "The accent may own exactly one large region per page — the safety panel. Everywhere else it is a stroke, a number, a tab, or a hover, never a wash.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Is the Page Rule",
+        "body": "No gradients, glass, blur, faux fibre or drop shadows. Depth comes from tonal paper steps, hairlines, and the plate's engineering grid. The grid appears only inside the plate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Axis Rule",
+        "body": "Display and headline settings may use Archivo's width axis. Body copy never does. The width change is the hierarchy device; adding a second display face is not.",
+        "section": "typography"
+      },
+      {
+        "name": "The Small Caps Are Labels Rule",
+        "body": "Tracked uppercase is reserved for labels, controls and figure keys. It never sets a paragraph.",
+        "section": "typography"
+      },
+      {
+        "name": "The Extrusion Rule",
+        "body": "The exploded plate is a front elevation plus a solid side face. The side is geometry, never a shadow, gradient, blur or bevel. The depth and direction are fixed across every plate part; the cycle stays flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use exactly one oxide-red field per page; the safety panel is that field.",
+      "Do set display and headline type with Archivo's width axis; keep body at 100% width.",
+      "Do use 1px hairlines and paper tones for structure; the page is flat.",
+      "Do keep the 80px engineering grid inside the plate; the reading column stays clean.",
+      "Do extrude the exploded plate along one 45° vector with a solid side face and an ink back edge; keep the cycle flat.",
+      "Do draw the buttstock as a long straight-comb wedge with a slanted buttplate, toe swivel and visible wrist; dark Maranyl against light metal.",
+      "Do use the Hong Kong Adventure Corps crest and unit name; the copyright line is © 2026 Hong Kong Adventure Corps. All rights reserved. There is no motto.",
+      "Do keep the Chinese layer paired span-for-span with the English."
+    ],
+    "donts": [
+      "Don't add gradients, glass, blur, drop shadows, or rounded cards.",
+      "Don't turn the figure depth into a cast shadow, gradient, bevel or specular highlight.",
+      "Don't simplify the buttstock back into a rounded rectangle or a generic wedge without the wrist, buttplate and toe swivel.",
+      "Don't use the accent as a background outside the safety panel.",
+      "Don't use a second display face or a monospace costume for technical labels.",
+      "Don't add kickers or eyebrows above headings; the number rail and the heading carry the structure.",
+      "Don't animate width, height, padding or margin; use transform, opacity, or a state swap.",
+      "Don't use colour alone to mark selection; the live tab, the stroke, and the readout name all change together."
+    ]
+  }
+}

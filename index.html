@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en-HK" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L1A1 SLR — Parts Handbook · Hong Kong Adventure Corps</title>
+  <meta name="description" content="An interactive parts handbook for the 7.62 mm L1A1 Self-Loading Rifle, made for the Hong Kong Adventure Corps (香港少年領袖團): exploded view, part notes, cycle of operation, specifications and safety.">
+  <meta name="author" content="Hong Kong Adventure Corps">
+  <meta name="theme-color" content="#EDEFEA">
+  <link rel="icon" href="assets/hkac-mark.png" type="image/png">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#plate">Skip to the plate <span class="zh">跳至分解圖</span></a>
+
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="L1A1 Parts Handbook, Hong Kong Adventure Corps — back to top">
+      <span class="wordmark__mark" aria-hidden="true">L1</span>
+      <span class="wordmark__text">
+        <span class="wordmark__title">L1A1</span>
+        <span class="wordmark__sub"><span class="en">PARTS HANDBOOK</span><span class="zh">零件手冊</span></span>
+        <span class="wordmark__unit"><span class="en">HONG KONG ADVENTURE CORPS</span><span class="zh">香港少年領袖團</span></span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#plate"><span class="en">Plate</span><span class="zh">分解圖</span></a>
+      <a href="#parts"><span class="en">Parts</span><span class="zh">零件</span></a>
+      <a href="#cycle"><span class="en">Cycle</span><span class="zh">循環</span></a>
+      <a href="#record"><span class="en">Record</span><span class="zh">數據</span></a>
+      <a href="#safety"><span class="en">Safety</span><span class="zh">安全</span></a>
+    </nav>
+
+    <nav class="mobile-index" aria-label="Sections, quick index">
+      <a href="#plate"><span class="en">Plate</span><span class="zh">分解圖</span></a>
+      <a href="#parts"><span class="en">Parts</span><span class="zh">零件</span></a>
+      <a href="#cycle"><span class="en">Cycle</span><span class="zh">循環</span></a>
+      <a href="#record"><span class="en">Record</span><span class="zh">數據</span></a>
+      <a href="#safety"><span class="en">Safety</span><span class="zh">安全</span></a>
+    </nav>
+
+    <div class="masthead__end">
+      <a class="crest-slot" href="#top" aria-label="Hong Kong Adventure Corps — back to top">
+        <img src="assets/hkac-mark.png" alt="Hong Kong Adventure Corps crest" width="34" height="34">
+      </a>
+      <div class="lang" role="group" aria-label="Language / 語言">
+        <button type="button" data-lang-set="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-set="zh" aria-pressed="false" lang="zh-Hant">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 00 · HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__lead">
+          <span class="hero__num" aria-hidden="true">00</span>
+          <h1 id="hero-title" class="display">L1A1<span class="display__dot" aria-hidden="true"></span><span class="sr-only">Self-Loading Rifle parts handbook</span></h1>
+          <p class="hero__sub"><span class="en">7.62 mm Self-Loading Rifle · inch pattern</span><span class="zh">7.62 毫米半自動步槍 · 英制規格</span></p>
+        </div>
+
+        <dl class="hero__specs" aria-label="Key specifications">
+          <div><dt><span class="en">Calibre</span><span class="zh">口徑</span></dt><dd>7.62 × 51 NATO</dd></div>
+          <div><dt><span class="en">Action</span><span class="zh">運作</span></dt><dd><span class="en">Gas · tilting bolt</span><span class="zh">氣動 · 傾斜閉鎖</span></dd></div>
+          <div><dt><span class="en">Length</span><span class="zh">全長</span></dt><dd>1,143 <span class="unit">mm</span></dd></div>
+          <div><dt><span class="en">Mass</span><span class="zh">空重</span></dt><dd>4.34 <span class="unit">kg</span></dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__body">
+        <p class="hero__lede">
+          <span class="en">A working handbook for the 7.62 mm Self-Loading Rifle: what every part is called, what it does, and how the whole machine cycles. Written for cadets, useful to anyone who has wondered what happens inside a battle rifle.</span>
+          <span class="zh">一本給 7.62 毫米半自動步槍的實用手冊：每個零件的名稱、作用，以及整支槍如何完成一次循環。為青少年制服團體成員而寫，也適合任何想了解戰鬥步槍內部運作的人。</span>
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#plate"><span class="en">Open the plate</span><span class="zh">打開分解圖</span><span class="btn__arrow" aria-hidden="true">↓</span></a>
+          <a class="btn" href="#cycle"><span class="en">The cycle</span><span class="zh">運作循環</span><span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero__note"><span class="en">British L1A1 · adopted 1954 · drawn from public references</span><span class="zh">英國 L1A1 · 1954 年採用 · 依據公開資料繪製</span></p>
+      </div>
+    </section>
+
+    <!-- 01 · PLATE -->
+    <section class="section plate" id="plate" aria-labelledby="plate-heading">
+      <div class="wrap">
+        <header class="s-head">
+          <p class="s-num">01</p>
+          <h2 id="plate-heading"><span class="en">The plate</span><span class="zh">分解圖</span></h2>
+          <p class="s-note"><span class="en">Eighteen parts, one drawing. Hover or tap a numbered tab to trace a part; select it to read the note below.</span><span class="zh">十八個零件，一幅圖。將游標移到編號上，或輕觸編號，追蹤零件；選取後可閱讀下方說明。</span></p>
+        </header>
+
+        <div class="plate__bar">
+          <div class="plate__status" aria-hidden="true">
+            <span class="plate__status-sq"></span>
+            <span class="en">Fig. 01 — field-stripped</span><span class="zh">圖 01 — 分解狀態</span>
+          </div>
+          <div class="plate__controls">
+            <div class="seg" role="group" aria-label="Plate state">
+              <button type="button" data-plate-state="exploded" aria-pressed="true"><span class="en">Stripped</span><span class="zh">分解</span></button>
+              <button type="button" data-plate-state="assembled" aria-pressed="false"><span class="en">Assembled</span><span class="zh">組合</span></button>
+            </div>
+            <div class="control-block">
+              <span class="control-label" id="filter-label"><span class="en">Filter</span><span class="zh">篩選</span></span>
+              <div class="chips" role="group" aria-labelledby="filter-label">
+                <button type="button" data-filter="all" aria-pressed="true"><span class="en">All</span><span class="zh">全部</span></button>
+                <button type="button" data-filter="gas" aria-pressed="false"><span class="en">Gas</span><span class="zh">氣動</span></button>
+                <button type="button" data-filter="action" aria-pressed="false"><span class="en">Action</span><span class="zh">機件</span></button>
+                <button type="button" data-filter="feed" aria-pressed="false"><span class="en">Feed</span><span class="zh">供彈</span></button>
+                <button type="button" data-filter="body" aria-pressed="false"><span class="en">Body</span><span class="zh">槍身</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="plate__views-block">
+          <span class="control-label" id="view-label"><span class="en">View</span><span class="zh">檢視</span></span>
+          <div class="plate__views" role="group" aria-labelledby="view-label">
+            <button type="button" data-view="front" aria-pressed="true"><span class="en">Front</span><span class="zh">槍口</span></button>
+            <button type="button" data-view="action" aria-pressed="false"><span class="en">Action</span><span class="zh">機匣</span></button>
+            <button type="button" data-view="rear" aria-pressed="false"><span class="en">Rear</span><span class="zh">槍托</span></button>
+          </div>
+        </div>
+        <p class="plate__swipe"><span class="en">Swipe the plate →</span><span class="zh">左右拖動分解圖 →</span></p>
+      </div>
+
+      <div class="wrap plate__readout-wrap">
+        <div class="plate-readout">
+          <span class="plate-readout__num" id="readout-num">01</span>
+          <div class="plate-readout__body">
+            <span class="plate-readout__name" id="readout-name"><span class="en">Flash eliminator</span><span class="zh">消焰器</span></span>
+            <a class="plate-readout__link" id="readout-link" href="#part-01"><span class="en">Read the note</span><span class="zh">閱讀說明</span> <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="plate__scroll">
+        <div class="plate__stage">
+          <svg class="plate-svg is-exploded is-booting" viewBox="0 60 1750 1000" role="img" aria-labelledby="plate-title plate-desc" preserveAspectRatio="xMidYMid meet">
+            <title id="plate-title">Exploded view of the L1A1 Self-Loading Rifle</title>
+            <desc id="plate-desc">A side-view schematic. Eighteen numbered parts are separated along the rifle. Each number links to a note in the parts catalogue below.</desc>
+            <defs>
+              <pattern id="plateGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+                <path d="M80 0H0V80" fill="none" stroke="#D2D6CD" stroke-width="1"/>
+              </pattern>
+              <pattern id="furnitureStipple" width="5" height="5" patternUnits="userSpaceOnUse">
+                <rect width="5" height="5" fill="#6A7268"/>
+                <circle cx="1.4" cy="1.4" r=".55" fill="#20261F" opacity=".22"/>
+                <circle cx="3.6" cy="3.4" r=".45" fill="#20261F" opacity=".14"/>
+              </pattern>
+            </defs>
+
+            <rect class="plate-grid" width="1750" height="1100" fill="url(#plateGrid)" pointer-events="none"/>
+
+            <g class="regmarks" aria-hidden="true">
+              <path d="M76 110h28M90 96v28M1646 110h28M1660 96v28M76 990h28M90 976v28M1646 990h28M1660 976v28"/>
+            </g>
+
+            <!-- 02 · Barrel (spine) -->
+            <g class="part" data-part="02" data-group="gas" data-tab="250,486" role="button" tabindex="0" aria-label="Part 02, barrel. Read the note.">
+              <rect class="hit" x="184" y="500" width="810" height="44"/>
+              <path class="m" d="M186 511h804v18H186z"/>
+              <path class="m" d="M930 500h70v40h-70z"/>
+              <path class="det" d="M190 520h800" stroke-dasharray="2 6"/>
+              <path class="det" d="M540 505v30"/>
+            </g>
+
+            <!-- 01 · Flash eliminator -->
+            <g class="part" data-part="01" data-group="gas" data-tab="100,484" style="--tx:-70px;--ty:-150px" role="button" tabindex="0" aria-label="Part 01, flash eliminator. Read the note.">
+              <rect class="hit" x="94" y="496" width="104" height="56"/>
+              <path class="m" d="M100 508h84v22h-84z"/>
+              <path class="p" d="M108 512h68v4h-68zM108 518h68v4h-68zM108 524h68v4h-68z"/>
+              <path class="m" d="M148 530h14v14h-14z"/>
+              <path class="det" d="M100 508v22M184 508v22"/>
+            </g>
+
+            <!-- 03 · Front sight -->
+            <g class="part" data-part="03" data-group="gas" data-tab="480,430" style="--tx:-90px;--ty:-250px" role="button" tabindex="0" aria-label="Part 03, front sight. Read the note.">
+              <rect class="hit" x="486" y="404" width="70" height="116"/>
+              <path class="m" d="M492 460h58v56h-58z"/>
+              <path class="m" d="M516 414h8v46h-8z"/>
+              <path class="m" d="M500 460v-38h9v38zM536 460v-38h9v38z"/>
+              <circle class="m" cx="545" cy="480" r="4"/>
+              <path class="det" d="M516 414v46"/>
+            </g>
+
+            <!-- 04 · Gas block -->
+            <g class="part" data-part="04" data-group="gas" data-tab="470,560" style="--tx:-80px;--ty:-150px" role="button" tabindex="0" aria-label="Part 04, gas block. Read the note.">
+              <rect class="hit" x="480" y="462" width="92" height="100"/>
+              <path class="m" d="M486 470h76l8 24v46h-76l-8-22z"/>
+              <circle class="p" cx="502" cy="498" r="13"/>
+              <path class="det" d="M494 498h16"/>
+              <circle class="p" cx="552" cy="500" r="10"/>
+              <path class="det" d="M552 552v-18"/>
+              <path class="det" d="M486 552h84"/>
+              <path class="det" d="M498 551h16"/>
+              <path class="ln" d="M500 552q-5 8 0 14q5 6 12 0q5-6 0-14" stroke-width="2"/>
+            </g>
+
+            <!-- 05 · Gas regulator -->
+            <g class="part" data-part="05" data-group="gas" data-tab="560,530" style="--tx:-210px;--ty:-230px" role="button" tabindex="0" aria-label="Part 05, gas regulator. Read the note.">
+              <rect class="hit" x="530" y="478" width="46" height="46"/>
+              <circle class="m" cx="552" cy="500" r="17"/>
+              <circle class="p" cx="552" cy="500" r="10"/>
+              <path class="det" d="M552 483v4M552 513v4M535 500h4M565 500h4M540 488l3 3M561 509l3 3M540 512l3-3M561 491l3-3"/>
+              <path class="m" d="M552 500l14-10 4 5-13 10z"/>
+            </g>
+
+            <!-- 07 · Handguard pair -->
+            <g class="part" data-part="07" data-group="body" data-tab="590,430" style="--tx:0px;--ty:-130px" role="button" tabindex="0" aria-label="Part 07, handguard, pair. Read the note.">
+              <rect class="hit" x="564" y="444" width="408" height="132"/>
+              <path class="f" d="M570 452h390q14 0 14 14v70q0 14-14 14H570q-12 0-12-12v-74q0-12 12-12z"/>
+              <path class="p" d="M610 470h150v5h-150zM610 484h150v5h-150zM610 498h150v5h-150z"/>
+              <path class="dl" d="M574 505h390"/>
+              <circle class="m" cx="930" cy="505" r="4"/>
+              <path class="det" d="M928 505h4"/>
+              <g class="hg-b">
+                <path class="f" d="M570 452h390q14 0 14 14v70q0 14-14 14H570q-12 0-12-12v-74q0-12 12-12z"/>
+                <path class="p" d="M610 470h150v5h-150zM610 484h150v5h-150zM610 498h150v5h-150z"/>
+                <path class="dl" d="M574 505h390"/>
+                <circle class="m" cx="930" cy="505" r="4"/>
+              </g>
+            </g>
+
+            <!-- 06 · Gas piston (internal) -->
+            <g class="part is-internal" data-part="06" data-group="gas" data-tab="600,450" style="--tx:-10px;--ty:-340px" role="button" tabindex="-1" aria-label="Part 06, gas piston. Read the note.">
+              <rect class="hit" x="548" y="464" width="360" height="40"/>
+              <path class="i" d="M560 476h330v14H560z"/>
+              <path class="m" d="M552 468h18v30h-18z"/>
+              <path class="det" d="M700 476v14M716 476v14M732 476v14M748 476v14M764 476v14"/>
+            </g>
+
+            <!-- 08 · Carry handle -->
+            <g class="part" data-part="08" data-group="body" data-tab="840,280" style="--tx:0px;--ty:-180px" role="button" tabindex="0" aria-label="Part 08, carry handle. Read the note.">
+              <rect class="hit" x="820" y="336" width="180" height="124"/>
+              <path class="ln" d="M830 452l10-82q2-10 12-10h96q10 0 11 10l8 82" stroke-width="8" stroke-linecap="round"/>
+              <path class="f" d="M872 342h86v9c0 6-4 10-10 10h-5c-5 0-8-4-8-8 0 4-3 8-8 8h-6c-5 0-8-4-8-8 0 4-3 8-8 8h-6c-6 0-10-4-10-10v-9z"/>
+              <path class="dl" d="M884 348q4 2 8 0M902 348q4 2 8 0M920 348q4 2 8 0"/>
+              <circle class="m" cx="972" cy="452" r="7"/>
+              <circle class="det" cx="972" cy="452" r="3"/>
+            </g>
+
+            <!-- 09 · Top cover -->
+            <g class="part" data-part="09" data-group="action" data-tab="980,410" style="--tx:0px;--ty:-120px" role="button" tabindex="0" aria-label="Part 09, top cover. Read the note.">
+              <rect class="hit" x="954" y="428" width="324" height="52"/>
+              <path class="m" d="M966 438h300q8 0 8 8v16q0 8-8 8H966q-8 0-8-8v-16q0-8 8-8z"/>
+              <path class="m" d="M1252 462h20v10h-20zM1252 438h20v10h-20z"/>
+              <path class="det" d="M986 446h270"/>
+            </g>
+
+            <!-- 10 · Bolt carrier (internal) -->
+            <g class="part is-internal" data-part="10" data-group="action" data-tab="1030,440" style="--tx:0px;--ty:-205px" role="button" tabindex="-1" aria-label="Part 10, bolt carrier. Read the note.">
+              <rect class="hit" x="1014" y="462" width="222" height="56"/>
+              <path class="i" d="M1020 472h180l10 10v20l-10 10h-180z"/>
+              <path class="det" d="M1048 482l44 8 44-8"/>
+              <path class="det" d="M1030 472v40"/>
+              <circle class="m" cx="1075" cy="470" r="5"/>
+            </g>
+
+            <!-- 11 · Bolt (internal) -->
+            <g class="part is-internal" data-part="11" data-group="action" data-tab="1200,450" style="--tx:80px;--ty:-300px" role="button" tabindex="-1" aria-label="Part 11, bolt. Read the note.">
+              <rect class="hit" x="1148" y="462" width="104" height="48"/>
+              <path class="i" d="M1160 476h56l10 8v10l-10 8h-56z"/>
+              <path class="m" d="M1152 472h12v8h-12z"/>
+              <path class="det" d="M1168 490h62"/>
+              <circle class="m" cx="1226" cy="480" r="3"/>
+            </g>
+
+            <!-- 12 · Return spring (internal) -->
+            <g class="part is-internal" data-part="12" data-group="action" data-tab="1300,450" style="--tx:110px;--ty:-225px" role="button" tabindex="-1" aria-label="Part 12, return spring. Read the note.">
+              <rect class="hit" x="1222" y="466" width="124" height="44"/>
+              <path class="det" d="M1224 488h114"/>
+              <path class="ln" d="M1230 488q8-11 16 0t16 0t16 0t16 0t16 0t16 0" stroke-width="1.7"/>
+            </g>
+
+            <!-- 13 · Charging handle -->
+            <g class="part" data-part="13" data-group="action" data-tab="1110,390" style="--tx:60px;--ty:-240px" role="button" tabindex="0" aria-label="Part 13, charging handle. Read the note.">
+              <rect class="hit" x="1054" y="394" width="82" height="82"/>
+              <path class="m" d="M1072 420h8v52h-8z"/>
+              <path class="f" d="M1060 404h58v14h-58z"/>
+              <circle class="m" cx="1076" cy="466" r="5"/>
+              <path class="det" d="M1106 410v8"/>
+            </g>
+
+            <!-- 14 · Receiver (anchor) -->
+            <g class="part" data-part="14" data-group="action" data-tab="940,570" role="button" tabindex="0" aria-label="Part 14, receiver. Read the note.">
+              <rect class="hit" x="948" y="458" width="346" height="150"/>
+              <path class="m" d="M952 466h318l14 18v82l-16 22H1082v12H978l-20-24v-42z"/>
+              <path class="p" d="M1012 480h128v42h-128z"/>
+              <path class="det" d="M1140 480v42M1012 522h128"/>
+              <path class="m" d="M1268 540h22v40h-22z"/>
+              <path class="m" d="M978 578h112v12H978z"/>
+              <path class="det" d="M970 545h90"/>
+              <circle class="p" cx="1198" cy="500" r="7"/>
+            </g>
+
+            <!-- 18 · Rear sight -->
+            <g class="part" data-part="18" data-group="body" data-tab="1280,400" style="--tx:40px;--ty:-95px" role="button" tabindex="0" aria-label="Part 18, rear sight. Read the note.">
+              <rect class="hit" x="1234" y="396" width="56" height="78"/>
+              <path class="m" d="M1238 462h42v10h-42z"/>
+              <path class="det" d="M1244 466v3M1250 466v3M1256 466v3M1262 466v3M1268 466v3M1274 466v3"/>
+              <path class="ln" d="M1250 462l10-46 10 46" stroke-width="3"/>
+              <circle class="p" cx="1260" cy="426" r="5"/>
+              <circle class="m" cx="1276" cy="452" r="4"/>
+              <path class="det" d="M1274 452h4"/>
+            </g>
+
+            <!-- 17 · Buttstock -->
+            <g class="part" data-part="17" data-group="body" data-tab="1300,460" style="--tx:55px;--ty:30px" role="button" tabindex="0" aria-label="Part 17, buttstock. Read the note.">
+              <rect class="hit" x="1280" y="450" width="420" height="340"/>
+              <path class="f" d="M1288 480C1340 500 1500 532 1654 540Q1660 542 1658 550L1636 700Q1632 708 1622 710Q1570 700 1520 690Q1440 670 1390 650C1335 630 1300 600 1288 570Z"/>
+              <path class="dl" d="M1300 492C1370 510 1530 532 1654 538"/>
+              <path class="d" d="M1658 536Q1670 538 1670 548L1650 712Q1644 716 1636 712C1640 650 1644 590 1658 536Z"/>
+              <circle class="dl" cx="1305" cy="510" r="3"/>
+              <path class="dl" d="M1303 510h4"/>
+              <path class="dl" d="M1616 706h14"/>
+              <path class="ln" d="M1618 708q-6 8 0 14q6 6 12 0q5-6 0-14" stroke-width="2"/>
+              <circle class="dl" cx="1624" cy="708" r="2"/>
+              <path class="dl" d="M1480 686Q1560 706 1636 710"/>
+            </g>
+
+            <!-- 15 · Magazine -->
+            <g class="part" data-part="15" data-group="feed" data-tab="980,620" style="--tx:0px;--ty:140px" role="button" tabindex="0" aria-label="Part 15, magazine. Read the note.">
+              <rect class="hit" x="986" y="588" width="116" height="218"/>
+              <path class="d" d="M996 596h94l6 170q0 18-18 18h-70q-18 0-18-18z"/>
+              <path class="det" d="M1000 640h86M1000 700h86"/>
+              <path class="d" d="M992 784h108v14H992z"/>
+              <path class="m" d="M996 596h20v14h-20z"/>
+            </g>
+
+            <!-- 16 · Trigger group -->
+            <g class="part" data-part="16" data-group="action" data-tab="1210,700" style="--tx:30px;--ty:90px" role="button" tabindex="0" aria-label="Part 16, trigger group. Read the note.">
+              <rect class="hit" x="1052" y="554" width="184" height="252"/>
+              <path class="m" d="M1082 560h146v76l-18 18h-96l-32-30z"/>
+              <path class="f" d="M1120 654h58l14 112q2 14-12 14h-38q-14 0-12-14z"/>
+              <path class="dl" d="M1128 660c-5 30-5 62 0 92M1174 660c5 30 5 62 0 92M1118 766h68"/>
+              <path class="ln" d="M1062 634v26q0 22 22 22h42" stroke-width="4"/>
+              <path class="ln" d="M1096 646q2 22 14 26" stroke-width="3"/>
+              <circle class="m" cx="1218" cy="572" r="6"/>
+              <circle class="det" cx="1218" cy="572" r="2.5"/>
+              <path class="m" d="M1188 596l18-8 4 8-18 8z"/>
+              <circle class="p" cx="1150" cy="622" r="9"/>
+              <path class="det" d="M1144 622h12M1150 616v12"/>
+            </g>
+
+            <g class="plate-caption" aria-hidden="true">
+              <text x="1680" y="1030" text-anchor="end">SCHEMATIC / 示意圖 · NOT TO SCALE / 不按比例</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <p class="sr-only" id="sr-status" aria-live="polite"></p>
+        <p class="plate__foot"><span class="en">The drawing is schematic. Proportions are adjusted so the parts can be read; it is not a blueprint for repair.</span><span class="zh">本圖為示意圖。比例經調整以便辨識零件，並非維修用的工程圖。</span></p>
+      </div>
+    </section>
+
+    <!-- 02 · PARTS -->
+    <section class="section parts" id="parts" aria-labelledby="parts-heading">
+      <div class="wrap">
+        <header class="s-head">
+          <p class="s-num">02</p>
+          <h2 id="parts-heading"><span class="en">The parts</span><span class="zh">零件</span></h2>
+          <p class="s-note"><span class="en">In the order they sit on the rifle, front to back. Each card says what the part does, and one thing worth knowing.</span><span class="zh">按步槍由前到後的順序排列。每張卡說明零件的作用，以及一項值得知道的事實。</span></p>
+        </header>
+
+        <div class="parts__count"><span class="en" id="count-en">18 parts · 4 groups</span><span class="zh" id="count-zh">18 個零件 · 4 組</span></div>
+
+        <div class="parts__grid" id="parts-grid">
+          <article class="pcard" id="part-01" data-part="01" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">01</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Flash eliminator</span><span class="zh">消焰器</span></h3>
+            <p class="pcard__role"><span class="en">The slotted steel tube at the muzzle. It breaks up the flash and protects the crown of the barrel; the lug underneath carries a bayonet.</span><span class="zh">槍口末端的開槽鋼管。它打散火焰，保護槍管前端的膛口；下方的凸耳用來安裝刺刀。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The L1A1’s eliminator is longer and fully enclosed than the open-pronged metric FAL type. It also accepts a blank-firing attachment.</span><span class="zh">L1A1 的消焰器比公制 FAL 的長，而且全包式設計，亦可安裝空包彈助退器。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-02">02</a> <a href="#part-03">03</a></p>
+          </article>
+
+          <article class="pcard" id="part-02" data-part="02" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">02</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Barrel</span><span class="zh">槍管</span></h3>
+            <p class="pcard__role"><span class="en">A rifled steel tube, 554 mm long. The chamber at the rear holds the cartridge; the grooves spin the bullet for stability. The front sight and gas block sit on it.</span><span class="zh">內有膛線的鋼管，長 554 毫米。後端的彈膛容納子彈，膛線令彈頭旋轉穩定。準星與導氣箍都裝在槍管上。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">Chambered for 7.62 × 51 mm NATO. The gas port is drilled near the front; everything after it belongs to the gas system.</span><span class="zh">口徑為 7.62×51 毫米北約彈。導氣孔開在槍管前段，之後的事就交給氣動系統。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-01">01</a> <a href="#part-04">04</a></p>
+          </article>
+
+          <article class="pcard" id="part-03" data-part="03" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">03</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Front sight</span><span class="zh">準星</span></h3>
+            <p class="pcard__role"><span class="en">The post you centre inside the rear aperture. Two steel ears protect it from knocks. Raising or lowering the post changes where the rifle shoots.</span><span class="zh">你透過照門看到的立柱。兩側鋼耳保護它免受碰撞。把準星調高或調低，會改變彈著點。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The foresight is a separate assembly, zeroed with a small tool. Cadets should not adjust it.</span><span class="zh">準星是獨立組件，由裝甲師以專用工具歸零；學員不應自行調整。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-18">18</a> <a href="#part-04">04</a></p>
+          </article>
+
+          <article class="pcard" id="part-04" data-part="04" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">04</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Gas block</span><span class="zh">導氣箍</span></h3>
+            <p class="pcard__role"><span class="en">A steel collar around the barrel, just ahead of the handguard. It collects gas from the barrel and houses the gas plug, regulator and cylinder. It also anchors the handguard and front sight.</span><span class="zh">包住槍管的鋼箍，位於護木前方。它收集槍管導出的氣體，容納導氣塞、調節器與氣缸，同時固定護木和準星。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The gas block is the front anchor of the whole upper assembly. Its fit affects accuracy as much as the barrel does.</span><span class="zh">導氣箍是整個上組件的前支點。它的裝配精度對準確度的影響，不亞於槍管本身。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-05">05</a> <a href="#part-06">06</a></p>
+          </article>
+
+          <article class="pcard" id="part-05" data-part="05" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">05</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Gas regulator</span><span class="zh">氣體調節器</span></h3>
+            <p class="pcard__role"><span class="en">A graduated collar that decides how much gas reaches the piston. Turning it vents more or less gas, so the action still cycles when the rifle is cold, dirty or hot.</span><span class="zh">帶刻度的套環，決定有多少氣體推動活塞。轉動它可多排或少排一點氣，讓步槍在寒冷、髒污或高溫下仍能循環。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">Set by the armourer, not the user. The number on the collar is a reference position, not a “power” setting.</span><span class="zh">由裝甲師設定，不是學員的日常控制。環上的數字是參考位置，不是「火力」設定。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-04">04</a> <a href="#part-06">06</a></p>
+          </article>
+
+          <article class="pcard" id="part-06" data-part="06" data-group="gas" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">06</span><span class="pcard__group"><span class="en">Gas</span><span class="zh">氣動</span></span></header>
+            <h3 class="pcard__name"><span class="en">Gas piston</span><span class="zh">導氣活塞</span></h3>
+            <p class="pcard__role"><span class="en">A short steel rod in the cylinder above the barrel. Gas pushes it back; it strikes the bolt carrier and immediately returns to rest. One push, then it is out of the way.</span><span class="zh">槍管上方氣缸內的一根短鋼桿。氣體把它向後推，它撞一下槍機框便立即回位。只推一次，然後讓開。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">Because the piston does not travel with the carrier, the FAL is a short-stroke system. A spring around the piston returns it.</span><span class="zh">活塞不隨槍機框全程移動，所以 FAL 屬於「短行程」氣動系統。活塞周圍的彈簧負責復位。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-04">04</a> <a href="#part-10">10</a></p>
+          </article>
+
+          <article class="pcard" id="part-07" data-part="07" data-group="body" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">07</span><span class="pcard__group"><span class="en">Body</span><span class="zh">槍身</span></span></header>
+            <h3 class="pcard__name"><span class="en">Handguard</span><span class="zh">護木</span></h3>
+            <p class="pcard__role"><span class="en">Two mirror halves that cover the barrel and gas cylinder, so your support hand is not on bare steel. They also protect the barrel from knocks.</span><span class="zh">兩片左右對稱的外殼，覆蓋槍管與氣缸，讓支撐手不用直接握著熱鋼。它也保護槍管免受碰撞。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">Early rifles used walnut; later L1A1s used Maranyl, a nylon and fibreglass composite. The halves are not interchangeable left-to-right.</span><span class="zh">早期用胡桃木，後期 L1A1 改用 Maranyl（尼龍與玻璃纖維複合材料）。左右兩片不能互換。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-02">02</a> <a href="#part-04">04</a></p>
+          </article>
+
+          <article class="pcard" id="part-08" data-part="08" data-group="body" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">08</span><span class="pcard__group"><span class="en">Body</span><span class="zh">槍身</span></span></header>
+            <h3 class="pcard__name"><span class="en">Carry handle</span><span class="zh">提把</span></h3>
+            <p class="pcard__role"><span class="en">A folding handle on the barrel group. It lets the rifle be carried comfortably and keeps the hand away from a hot barrel.</span><span class="zh">槍管組上的摺疊提把，方便攜行，也讓手遠離熾熱的槍管。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">It is spring-loaded and folds flat. It is not a sight, and it should not be used to steady the rifle.</span><span class="zh">內有彈簧，可平貼護木。它不是瞄具，也不應用來穩定射擊。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-04">04</a> <a href="#part-07">07</a></p>
+          </article>
+
+          <article class="pcard" id="part-09" data-part="09" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">09</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Top cover</span><span class="zh">頂蓋</span></h3>
+            <p class="pcard__role"><span class="en">The long lid over the receiver. It keeps dirt out of the boltway, and on some variants it carries the rear sight or an optical-sight rail.</span><span class="zh">機匣上方的長蓋，阻止泥沙進入槍機槽；部分版本也在上面安裝照門或光學瞄具導軌。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The L1A1 added retaining tabs at the rear so the cover cannot creep forward and lose the zero of a SUIT sight.</span><span class="zh">L1A1 在後端加了固定凸耳，防止頂蓋前移，避免 SUIT 瞄具失去歸零。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-10">10</a> <a href="#part-12">12</a></p>
+          </article>
+
+          <article class="pcard" id="part-10" data-part="10" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">10</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Bolt carrier</span><span class="zh">槍機框</span></h3>
+            <p class="pcard__role"><span class="en">The moving frame inside the receiver. The gas piston strikes it; its cam track lifts and lowers the bolt; it carries the charging handle and compresses the return spring.</span><span class="zh">機匣內移動的框架。導氣活塞撞擊它；它的凸輪槽抬起和放下槍機；它帶動拉機柄，並壓縮復進簧。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The carrier does not lock the rifle. It only moves the bolt; the bolt itself locks into the receiver.</span><span class="zh">槍機框本身不閉鎖，只負責移動槍機；真正閉鎖的是槍機。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-11">11</a> <a href="#part-12">12</a></p>
+          </article>
+
+          <article class="pcard" id="part-11" data-part="11" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">11</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Bolt</span><span class="zh">槍機</span></h3>
+            <p class="pcard__role"><span class="en">The part that seals the chamber. Its rear tips down into a recess in the receiver floor and bears on the locking shoulder. It carries the extractor and the firing pin.</span><span class="zh">密封彈膛的零件。尾部向下傾入機匣底部的凹槽，抵住閉鎖肩。它帶著抽殼鈎和擊針。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The L1A1 locks by tipping the bolt’s tail down, not by rotating the bolt like an AR-15. The locking shoulder is a hardened insert in the receiver.</span><span class="zh">L1A1 是「槍機尾下傾」閉鎖，不像 AR-15 那樣旋轉槍機。閉鎖肩是機匣內的硬化嵌件。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-10">10</a> <a href="#part-14">14</a></p>
+          </article>
+
+          <article class="pcard" id="part-12" data-part="12" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">12</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Return spring</span><span class="zh">復進簧</span></h3>
+            <p class="pcard__role"><span class="en">A long coil spring behind the carrier, housed in the butt of the rifle. It stores the energy of the recoil and drives the carrier, bolt and next round back into battery.</span><span class="zh">槍機框後方的長彈簧，藏在槍托內。它吸收後座的能量，再把槍機框、槍機和下一發子彈推回膛室。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">A weak or bent spring causes failures to return to battery. It is captive under the top cover; do not kink it.</span><span class="zh">彈簧變弱或彎曲會導致復進不到位。它由頂蓋壓住，不要扭折。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-09">09</a> <a href="#part-17">17</a></p>
+          </article>
+
+          <article class="pcard" id="part-13" data-part="13" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">13</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Charging handle</span><span class="zh">拉機柄</span></h3>
+            <p class="pcard__role"><span class="en">The folding handle on the left of the receiver. Pulling it back drags the carrier and bolt rearward, cocking the hammer and letting you clear the chamber.</span><span class="zh">機匣左側的摺疊手柄。向後拉會帶動槍機框和槍機後退，令擊錘待發，並可清空彈膛。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The L1A1’s handle stays still when the rifle fires, unlike the metric FAL’s reciprocating handle. Keep your hand clear of it anyway.</span><span class="zh">L1A1 的拉機柄在射擊時保持不動，這是它與公制 FAL 的分別之一。操作時仍要讓手遠離它。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-10">10</a> <a href="#part-14">14</a></p>
+          </article>
+
+          <article class="pcard" id="part-14" data-part="14" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">14</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Receiver</span><span class="zh">機匣</span></h3>
+            <p class="pcard__role"><span class="en">The forged steel body that holds the barrel, the bolt group, the magazine and the trigger housing. It contains the locking recess and the ejection port. It is the spine of the rifle.</span><span class="zh">鍛鋼製的主體，容納槍管、槍機組、彈匣和扳機座。內有閉鎖凹槽和拋殼口。它是整支槍的脊骨。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">Inch and metric FAL receivers look alike but differ in threads, cuts and small parts. The L1A1’s lightening cuts are its own pattern.</span><span class="zh">英制與公制 FAL 的機匣外表相似，但螺紋、切削和細件不同。L1A1 的減重切削是它自己的樣式。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-11">11</a> <a href="#part-16">16</a></p>
+          </article>
+
+          <article class="pcard" id="part-15" data-part="15" data-group="feed" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">15</span><span class="pcard__group"><span class="en">Feed</span><span class="zh">供彈</span></span></header>
+            <h3 class="pcard__name"><span class="en">Magazine</span><span class="zh">彈匣</span></h3>
+            <p class="pcard__role"><span class="en">A 20-round steel box. A spring pushes the rounds up; the top round is stripped off by the bolt as it closes. The catch at the front holds it in the magazine well.</span><span class="zh">20 發鋼製盒式彈匣。彈簧把子彈向上推，槍機前進時把最上面一發推入彈膛。前方的卡榫把它固定在彈匣井內。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The inch magazine has a brazed front lug. Metric magazines may sometimes fit, but inch magazines will not fit a metric FAL. Treat a loaded magazine as live.</span><span class="zh">英制彈匣前方有焊接凸耳；公制彈匣有時可用，但英制彈匣不能插入公制 FAL。裝滿的彈匣一律當作已上膛。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-14">14</a> <a href="#part-16">16</a></p>
+          </article>
+
+          <article class="pcard" id="part-16" data-part="16" data-group="action" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">16</span><span class="pcard__group"><span class="en">Action</span><span class="zh">機件</span></span></header>
+            <h3 class="pcard__name"><span class="en">Trigger group</span><span class="zh">扳機組</span></h3>
+            <p class="pcard__role"><span class="en">The lower housing that holds the trigger, hammer, sear and change lever. The trigger releases the hammer; the hammer strikes the firing pin; the sear catches the hammer again as the carrier moves back.</span><span class="zh">下部的扳機座，容納扳機、擊錘、阻鐵和快慢機。扳機釋放擊錘，擊錘打擊擊針；槍機框後退時，阻鐵再次扣住擊錘。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The housing hinges down at the rear for maintenance. The change lever has only S (safe) and R (repeat) — no automatic setting.</span><span class="zh">扳機座在後方鉸接，可向下打開保養。快慢機只有 S（保險）和 R（單發），沒有全自動。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-11">11</a> <a href="#part-15">15</a></p>
+          </article>
+
+          <article class="pcard" id="part-17" data-part="17" data-group="body" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">17</span><span class="pcard__group"><span class="en">Body</span><span class="zh">槍身</span></span></header>
+            <h3 class="pcard__name"><span class="en">Buttstock</span><span class="zh">槍托</span></h3>
+            <p class="pcard__role"><span class="en">The shoulder piece. It holds the return-spring guide, sets the length of pull and gives the rifle its balance. The butt trap holds a cleaning kit and oil bottle.</span><span class="zh">抵肩的部分。它容納復進簧導桿，決定握持長度，也影響全槍平衡。托底板內的暗格可放清潔工具和油壺。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">L1A1 stocks were made in four lengths, plus a short “Arctic” pattern. The buttplate is a separate casting.</span><span class="zh">L1A1 槍托有四種長度，另有供極寒衣著使用的短版。托底板是獨立鑄件。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-12">12</a> <a href="#part-14">14</a></p>
+          </article>
+
+          <article class="pcard" id="part-18" data-part="18" data-group="body" tabindex="0">
+            <header class="pcard__top"><span class="pcard__num">18</span><span class="pcard__group"><span class="en">Body</span><span class="zh">槍身</span></span></header>
+            <h3 class="pcard__name"><span class="en">Rear sight</span><span class="zh">照門</span></h3>
+            <p class="pcard__role"><span class="en">The folding aperture on the receiver. You look through the hole and centre the front post; the leaf folds forward when not in use. Range and windage are set on its ramp and screws.</span><span class="zh">機匣上的摺疊覘孔。你透過小孔看出去，把準星置中；不用時可向前摺下。距離與風偏由斜軌和螺絲調整。</span></p>
+            <p class="pcard__note"><span class="pcard__label"><span class="en">Note</span><span class="zh">註</span></span><span class="en">The standard L1A1 uses a folding aperture. The Hythe and SUIT sights were separate kits, not fitted to every rifle.</span><span class="zh">標準 L1A1 用摺疊覘孔；Hythe 與 SUIT 是另外加裝的瞄具，不是每支槍都有。</span></p>
+            <p class="pcard__rel"><span class="pcard__label"><span class="en">Rel.</span><span class="zh">相關</span></span> <a href="#part-03">03</a> <a href="#part-14">14</a></p>
+          </article>
+        </div>
+
+        <p class="parts__empty" id="parts-empty" hidden><span class="en">No parts in this group.</span><span class="zh">此組沒有零件。</span></p>
+      </div>
+    </section>
+
+    <!-- 03 · CYCLE -->
+    <section class="section cycle" id="cycle" aria-labelledby="cycle-heading">
+      <div class="wrap">
+        <header class="s-head">
+          <p class="s-num">03</p>
+          <h2 id="cycle-heading"><span class="en">The cycle</span><span class="zh">運作循環</span></h2>
+          <p class="s-note"><span class="en">Six moments, one shot. Step through them, or let the page walk you from feed to lock, fire, unlock, extract and return.</span><span class="zh">六個瞬間，一發子彈。逐步觀看，或讓頁面帶你由供彈、閉鎖、擊發、解鎖、抽殼到復進。</span></p>
+        </header>
+      </div>
+
+      <div class="wrap cycle__grid">
+        <figure class="cycle__figure">
+          <div class="cycle__frame">
+            <svg class="cycle-svg" id="cycle-svg" viewBox="0 0 560 400" data-step="1" role="img" aria-labelledby="cycle-svg-title cycle-svg-desc">
+              <title id="cycle-svg-title">Schematic of the L1A1 cycling action</title>
+              <desc id="cycle-svg-desc">A simplified side section showing the barrel, chamber, bolt, carrier, return spring, magazine and hammer. The highlighted parts change with the selected step.</desc>
+              <defs>
+                <pattern id="cycleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M40 0H0V40" fill="none" stroke="#D2D6CD" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="560" height="400" fill="url(#cycleGrid)"/>
+
+              <!-- fixed structure -->
+              <g class="depthable">
+                <path class="m" d="M20 99h220v20H20z"/>
+                <path class="m" d="M240 91h64v36h-64z"/>
+                <path class="det" d="M24 109h276" stroke-dasharray="2 6"/>
+              </g>
+              <g class="depthable">
+                <path class="m" d="M200 72h160v10H200z"/>
+              </g>
+              <path class="det" d="M240 99v-17"/>
+              <path class="m" d="M320 60h100v24H320z"/>
+              <path class="p" d="M324 64h92v16h-92z"/>
+              <g class="depthable">
+                <path class="m" d="M258 138h58v132h-58z"/>
+                <path class="d" d="M264 176h46v12h-46zM264 202h46v12h-46z"/>
+                <path class="det" d="M258 138v132M316 138v132"/>
+              </g>
+
+              <!-- return spring -->
+              <g class="spring">
+                <path class="det" d="M464 108h80"/>
+                <path class="ln" d="M466 108q7-10 14 0t14 0t14 0t14 0t14 0t14 0" stroke-width="1.6"/>
+              </g>
+
+              <!-- action: carrier + bolt -->
+              <g class="action depthable">
+                <path class="i" d="M304 92h58l8 8v12l-8 8h-58z"/>
+                <path class="i" d="M370 90h84l10 10v16l-10 10h-84z"/>
+                <path class="det" d="M320 110h34"/>
+                <path class="det" d="M386 100l24 8 24-8"/>
+                <text class="clabel" x="333" y="116" text-anchor="middle">BOLT</text>
+                <text class="clabel" x="412" y="116" text-anchor="middle">CARRIER</text>
+              </g>
+
+              <!-- hammer + trigger (fixed below) -->
+              <g class="hammer depthable">
+                <path class="m" d="M350 248l-8-64 18-4 10 64z"/>
+                <circle class="m" cx="350" cy="250" r="9"/>
+                <path class="ln" d="M338 178l-8-10" stroke-width="3"/>
+              </g>
+              <path class="ln" d="M322 292q0 18 20 18h40" stroke-width="3"/>
+              <path class="ln" d="M328 292q4 16 16 18" stroke-width="3"/>
+              <path class="det" d="M350 250l-20 42"/>
+              <path class="det" d="M556 492l-34-26"/>
+              <circle class="det" cx="522" cy="466" r="3"/>
+
+              <!-- gas path -->
+              <g class="gas">
+                <path class="accent" d="M200 99V82h160" fill="none" stroke-width="2"/>
+                <path class="accent" d="M352 76l8 6-8 6" fill="none" stroke-width="2"/>
+              </g>
+
+              <!-- cartridge / case -->
+              <path class="det" d="M376 60h48v26h-48z" stroke-dasharray="3 4"/>
+              <path class="feed-arrow" d="M282 142v-18M276 130l6-8 6 8"/>
+              <path class="shot-line" d="M240 109H14"/>
+              <path class="projectile" d="M20 104l-16 5 16 5z"/>
+              <g class="cartridge">
+                <rect class="cart-case" x="270" y="103" width="26" height="12"/>
+                <path class="cart-tip" d="M270 109l-14-6v12z"/>
+                <line x1="294" y1="103" x2="294" y2="115"/>
+                <circle class="cart-primer" cx="291" cy="109" r="1.5"/>
+              </g>
+
+              <!-- locking mark -->
+              <g class="lockmark">
+                <path class="accent" d="M356 126v10M350 131h12" stroke-width="2"/>
+                <text class="cnote" x="372" y="142">LOCK</text>
+              </g>
+
+              <!-- firing pin flash -->
+              <path class="pin" d="M344 110h24"/>
+              <path class="pin" d="M368 104l6 6-6 6" fill="none"/>
+
+              <!-- labels -->
+              <text class="clabel" x="34" y="142">BARREL</text>
+              <text class="clabel" x="202" y="58">GAS</text>
+              <text class="clabel" x="486" y="142">SPRING</text>
+              <text class="clabel" x="244" y="300">MAGAZINE</text>
+              <text class="clabel" x="392" y="238">HAMMER</text>
+            </svg>
+            <span class="cycle__fig"><span class="en">Fig. 02 — cycling action</span><span class="zh">圖 02 — 循環動作</span></span>
+          </div>
+          <figcaption class="cycle__figcap"><span class="en">Schematic. The drawing shows relationship, not scale.</span><span class="zh">示意圖。圖中顯示的是零件關係，不是比例。</span></figcaption>
+        </figure>
+
+        <div class="cycle__steps">
+          <ol class="steps" id="steps">
+            <li><button type="button" class="step is-active" data-step="1" aria-pressed="true">
+              <span class="step__num">01</span>
+              <span class="step__title"><span class="en">Feed</span><span class="zh">供彈</span></span>
+              <span class="step__desc"><span class="en">The bolt travels forward and strips the top round from the magazine into the chamber.</span><span class="zh">槍機向前，從彈匣頂部推出一發子彈，送入彈膛。</span></span>
+            </button></li>
+            <li><button type="button" class="step" data-step="2" aria-pressed="false">
+              <span class="step__num">02</span>
+              <span class="step__title"><span class="en">Lock</span><span class="zh">閉鎖</span></span>
+              <span class="step__desc"><span class="en">The carrier’s cam tips the bolt’s tail down into the receiver. The breech is sealed.</span><span class="zh">槍機框的凸輪把槍機尾部壓入機匣。膛室密閉。</span></span>
+            </button></li>
+            <li><button type="button" class="step" data-step="3" aria-pressed="false">
+              <span class="step__num">03</span>
+              <span class="step__title"><span class="en">Fire</span><span class="zh">擊發</span></span>
+              <span class="step__desc"><span class="en">The trigger releases the hammer. It strikes the firing pin, which hits the primer.</span><span class="zh">扳機釋放擊錘，擊錘撞擊擊針，擊針打擊底火。</span></span>
+            </button></li>
+            <li><button type="button" class="step" data-step="4" aria-pressed="false">
+              <span class="step__num">04</span>
+              <span class="step__title"><span class="en">Unlock</span><span class="zh">解鎖</span></span>
+              <span class="step__desc"><span class="en">Gas from the barrel pushes the piston. The piston taps the carrier; the cam lifts the bolt.</span><span class="zh">槍管導出的氣體推動活塞，活塞撞擊槍機框，凸輪抬起槍機。</span></span>
+            </button></li>
+            <li><button type="button" class="step" data-step="5" aria-pressed="false">
+              <span class="step__num">05</span>
+              <span class="step__title"><span class="en">Extract &amp; eject</span><span class="zh">抽殼與拋殼</span></span>
+              <span class="step__desc"><span class="en">The extractor holds the empty case. It strikes the ejector and leaves through the port.</span><span class="zh">抽殼鈎抓住空殼，空殼撞上拋殼挺，從拋殼口飛出。</span></span>
+            </button></li>
+            <li><button type="button" class="step" data-step="6" aria-pressed="false">
+              <span class="step__num">06</span>
+              <span class="step__title"><span class="en">Return</span><span class="zh">復進</span></span>
+              <span class="step__desc"><span class="en">The return spring drives the group forward, feeding the next round. The hammer is cocked.</span><span class="zh">復進簧推動槍機組向前，送入下一發。擊錘已待發。</span></span>
+            </button></li>
+          </ol>
+
+          <div class="cycle__foot">
+            <button type="button" class="btn btn--solid btn--play" id="play-cycle" aria-pressed="false"><span class="en">Play the cycle</span><span class="zh">播放循環</span><span class="btn__arrow" aria-hidden="true">▶</span></button>
+            <p class="cycle__note"><span class="en">Semi-automatic: one press, one shot. The L1A1 has no automatic setting; the change lever is <strong>S</strong> (safe) or <strong>R</strong> (repeat).</span><span class="zh">半自動：每次扣扳機只發射一發。L1A1 沒有全自動模式；快慢機只有 <strong>S</strong>（保險）與 <strong>R</strong>（單發）。</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · RECORD -->
+    <section class="section record" id="record" aria-labelledby="record-heading">
+      <div class="wrap">
+        <header class="s-head">
+          <p class="s-num">04</p>
+          <h2 id="record-heading"><span class="en">The record</span><span class="zh">技術資料</span></h2>
+          <p class="s-note"><span class="en">A short technical file, and the differences that make this an L1A1 rather than a metric FAL.</span><span class="zh">簡短的技術檔案，以及 L1A1 與公制 FAL 的差異。</span></p>
+        </header>
+
+        <div class="record__grid">
+          <div class="record__table">
+            <table class="spec-table">
+              <caption class="sr-only">L1A1 technical specifications</caption>
+              <thead><tr><th scope="col"><span class="en">Item</span><span class="zh">項目</span></th><th scope="col"><span class="en">L1A1</span><span class="zh">數值</span></th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><span class="en">Cartridge</span><span class="zh">彈藥</span></th><td>7.62 × 51 mm NATO</td></tr>
+                <tr><th scope="row"><span class="en">Action</span><span class="zh">運作方式</span></th><td><span class="en">Gas-operated, short-stroke piston, tilting bolt</span><span class="zh">氣動、短行程活塞、傾斜閉鎖</span></td></tr>
+                <tr><th scope="row"><span class="en">Fire</span><span class="zh">射擊模式</span></th><td><span class="en">Semi-automatic only (L1A1)</span><span class="zh">僅半自動（L1A1）</span></td></tr>
+                <tr><th scope="row"><span class="en">Overall length</span><span class="zh">全長</span></th><td>1,143 <span class="unit">mm</span> (45 <span class="unit">in</span>)</td></tr>
+                <tr><th scope="row"><span class="en">Barrel</span><span class="zh">槍管</span></th><td>554.4 <span class="unit">mm</span> (21.8 <span class="unit">in</span>)</td></tr>
+                <tr><th scope="row"><span class="en">Empty mass</span><span class="zh">空槍重量</span></th><td>4.34 <span class="unit">kg</span> (9.56 <span class="unit">lb</span>)</td></tr>
+                <tr><th scope="row"><span class="en">Muzzle velocity</span><span class="zh">槍口初速</span></th><td>823 <span class="unit">m/s</span></td></tr>
+                <tr><th scope="row"><span class="en">Feed</span><span class="zh">供彈</span></th><td><span class="en">20-round detachable box</span><span class="zh">20 發可拆式彈匣</span></td></tr>
+                <tr><th scope="row"><span class="en">Sights</span><span class="zh">瞄具</span></th><td><span class="en">Folding aperture rear; post front</span><span class="zh">摺疊覘孔照門；柱狀準星</span></td></tr>
+                <tr><th scope="row"><span class="en">Effective range</span><span class="zh">有效射程</span></th><td>800 <span class="unit">m</span></td></tr>
+                <tr><th scope="row"><span class="en">UK service</span><span class="zh">英國服役期</span></th><td>1954–1994</td></tr>
+                <tr><th scope="row"><span class="en">Producers</span><span class="zh">生產者</span></th><td><span class="en">RSAF Enfield, BSA, ROF; Lithgow (AU)</span><span class="zh">Enfield、BSA、皇家兵工廠；Lithgow（澳洲）</span></td></tr>
+              </tbody>
+            </table>
+            <p class="record__fine"><span class="en">Figures for the British L1A1. Australian and Canadian variants differ in detail.</span><span class="zh">數值以英國 L1A1 為準；澳洲及加拿大版本在細節上有所不同。</span></p>
+          </div>
+
+          <div class="record__notes">
+            <div class="record__block">
+              <h3><span class="en">Lineage</span><span class="zh">沿革</span></h3>
+              <p><span class="en">Designed in Belgium by Dieudonné Saive and Ernest Vervier between 1947 and 1953, the FAL was adopted by the United Kingdom in 1954 as the L1A1. It was built to imperial measurements by Enfield, BSA and the Royal Ordnance Factories. Australia built its own at Lithgow from 1959; Canada fielded the C1 and C1A1.</span><span class="zh">FAL 由比利時的 Dieudonné Saive 與 Ernest Vervier 於 1947 至 1953 年間設計。英國在 1954 年採用，成為 L1A1，由 Enfield、BSA 及皇家兵工廠按英制尺寸生產。澳洲自 1959 年起在 Lithgow 生產；加拿大則採用 C1 與 C1A1。</span></p>
+              <div class="record__dates" aria-label="Service dates">
+                <span><b>1954</b><span class="en">adopted</span><span class="zh">採用</span></span>
+                <span><b>1985</b><span class="en">L85 begins replacement</span><span class="zh">L85 開始替換</span></span>
+                <span><b>1994</b><span class="en">withdrawn</span><span class="zh">退役</span></span>
+              </div>
+            </div>
+
+            <div class="record__block">
+              <h3><span class="en">What makes it “inch pattern”</span><span class="zh">何謂「英制規格」</span></h3>
+              <ul class="record__list">
+                <li><span class="en"><strong>S / R only.</strong> The change lever has safe and repeat; there is no automatic setting.</span><span class="zh"><strong>只有 S／R。</strong>快慢機設保險與單發，沒有全自動。</span></li>
+                <li><span class="en"><strong>Folding cocking handle</strong> on the left, stationary when firing.</span><span class="zh"><strong>左側摺疊拉機柄</strong>，射擊時保持不動。</span></li>
+                <li><span class="en"><strong>Sand cuts</strong> in the receiver and bolt group give dirt somewhere to go.</span><span class="zh"><strong>排沙槽</strong>設於機匣與槍機組，讓沙塵有路可走。</span></li>
+                <li><span class="en"><strong>Folding trigger guard</strong> for use with Arctic mitts.</span><span class="zh"><strong>可摺式扳機護圈</strong>，方便戴極寒手套操作。</span></li>
+                <li><span class="en"><strong>Enclosed, slotted flash eliminator</strong> with a bayonet lug.</span><span class="zh"><strong>全包式開槽消焰器</strong>，附刺刀座。</span></li>
+                <li><span class="en"><strong>Retaining tabs</strong> on the top cover; no automatic bolt hold-open.</span><span class="zh"><strong>頂蓋固定凸耳</strong>；取消自動槍機後定。</span></li>
+              </ul>
+              <p class="record__warn"><span class="en">Metric and inch parts can look interchangeable and are not. Do not mix them.</span><span class="zh">公制與英制零件外表可能相似，但並不通用。切勿混用。</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · SAFETY -->
+    <section class="section safety" id="safety" aria-labelledby="safety-heading">
+      <div class="wrap safety__grid">
+        <div class="safety__head">
+          <p class="safety__section-num" aria-hidden="true">05</p>
+          <h2 id="safety-heading"><span class="en">A rifle is not a prop.</span><span class="zh">步槍不是道具。</span></h2>
+          <p class="safety__lede"><span class="en">These rules come before any page, any diagram, any quiz. Your instructor’s orders come before this website.</span><span class="zh">以下規則優先於任何頁面、圖解或測驗。導師的指示，優先於本網站。</span></p>
+        </div>
+        <ol class="safety__rules">
+          <li><span class="safety__num">01</span><p><span class="en">Treat every rifle as loaded — even after you have checked it.</span><span class="zh">把每支槍都當作已上膛——即使你剛剛檢查過。</span></p></li>
+          <li><span class="safety__num">02</span><p><span class="en">Handle a rifle only when an instructor is present and has given the order.</span><span class="zh">只可在導師在場並下達指示時接觸步槍。</span></p></li>
+          <li><span class="safety__num">03</span><p><span class="en">Keep the muzzle pointed in a safe direction. Keep your finger off the trigger until told otherwise.</span><span class="zh">槍口永遠指向安全方向。未獲指示前，手指不要放在扳機上。</span></p></li>
+          <li><span class="safety__num">04</span><p><span class="en">Your unit’s range orders come first. This page is a study aid, not a drill.</span><span class="zh">所屬單位的射擊守則優先。本頁只是學習輔助，不是操練指令。</span></p></li>
+          <li><span class="safety__num">05</span><p><span class="en">Never modify, repair or disassemble a live firearm. Ask your instructor.</span><span class="zh">切勿改裝、修理或拆解可發射的槍械。有疑問，請教導師。</span></p></li>
+        </ol>
+        <p class="safety__close"><span class="en">If you are unsure, stop. Ask.</span><span class="zh">如有疑問，立即停止，並請教導師。</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="colophon">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a class="wordmark wordmark--footer" href="#top" aria-label="Back to top">
+          <span class="wordmark__mark" aria-hidden="true">L1</span>
+          <span class="wordmark__text"><span class="wordmark__title">L1A1</span><span class="wordmark__sub"><span class="en">PARTS HANDBOOK</span><span class="zh">零件手冊</span></span></span>
+        </a>
+        <p class="footer__unit"><span class="en">Hong Kong Adventure Corps</span><span class="zh">香港少年領袖團</span></p>
+        <p class="footer__copyright"><span class="en">© 2026 Hong Kong Adventure Corps. All rights reserved.</span><span class="zh">© 2026 香港少年領袖團。版權所有。</span></p>
+      </div>
+
+      <div class="footer__col">
+        <h2><span class="en">Colophon</span><span class="zh">版權頁</span></h2>
+        <p><span class="en">An independent study aid made for the Hong Kong Adventure Corps. Drawings are original schematic interpretations, not to scale. No official manual pages are reproduced.</span><span class="zh">為香港少年領袖團製作的獨立學習輔助。圖為原創示意圖，不按比例。未複製任何官方手冊頁面。</span></p>
+        <p><span class="en">Sources: public reference material, including the Australian War Memorial and standard L1A1 parts nomenclature.</span><span class="zh">資料來源：公開參考資料，包括澳洲戰爭紀念館及 L1A1 標準零件名稱。</span></p>
+      </div>
+
+      <div class="footer__col footer__col--meta">
+        <h2><span class="en">Revision</span><span class="zh">版本</span></h2>
+        <dl>
+          <div><dt><span class="en">Rev.</span><span class="zh">版次</span></dt><dd>01 / 2026</dd></div>
+          <div><dt><span class="en">Build</span><span class="zh">形式</span></dt><dd><span class="en">Static · GitHub Pages</span><span class="zh">靜態 · GitHub Pages</span></dd></div>
+          <div><dt><span class="en">Language</span><span class="zh">語言</span></dt><dd><span class="en">English / 繁體中文</span><span class="zh">English / 繁體中文</span></dd></div>
+        </dl>
+        <a class="footer__top" href="#top"><span class="en">Back to top</span><span class="zh">回到頂部</span> <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+    <div class="wrap footer__base"><span class="en">L1A1 SLR · 7.62 × 51 NATO · Inch pattern</span><span class="zh">L1A1 半自動步槍 · 7.62×51 北約彈 · 英制規格</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
